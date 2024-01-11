@@ -1,11 +1,15 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿
 
 namespace CSharp_Intermediate
 {
-    class Program
+    partial class Program
     {
+        
 
 
+
+        // Explaining Getter Setter
+        /*
         public class Person
         {
             private DateTime _birthday;
@@ -21,13 +25,25 @@ namespace CSharp_Intermediate
             }
 
         }
-
+        */
 
         static void Main(string[] args)
         {
+
+
+
+            var person = new Person(new DateTime(1982, 1, 1));
+            Console.WriteLine(person.Age);
+
+
+
+
+            // Explaining Getter Setter
+            /*
             var person = new Person();
             person.SetBirthdate(new DateTime(1982,1,1));
             Console.WriteLine(person.GetBirthdate());
+            */
         }
 
 
