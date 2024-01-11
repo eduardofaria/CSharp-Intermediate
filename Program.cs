@@ -4,9 +4,34 @@ namespace CSharp_Intermediate
 {
     class Program
     {
-        
+
+
+        public class Person
+        {
+            private DateTime _birthday;
+
+            public void SetBirthdate(DateTime birthdate)
+            {
+                _birthday = birthdate;
+            }
+
+            public DateTime GetBirthdate()
+            {
+                return _birthday;
+            }
+
+        }
+
 
         static void Main(string[] args)
+        {
+            var person = new Person();
+            person.SetBirthdate(new DateTime(1982,1,1));
+            Console.WriteLine(person.GetBirthdate());
+        }
+
+
+        static void CustomerExemple()
         {
             var customer = new Customer(1);
             customer.Orders.Add(new Order());
@@ -15,6 +40,7 @@ namespace CSharp_Intermediate
             customer.Promote();
 
             Console.WriteLine(customer.Orders.Count);
+
         }
 
 
