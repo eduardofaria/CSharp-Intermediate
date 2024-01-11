@@ -1,10 +1,12 @@
 ﻿
 
-namespace CSharp_Intermediate
+using System.Globalization;
+using CSharp_Intermediate;
 
-{
-    class Program
+namespace CSharp_Intermediate
     {
+        class Program
+        {
 
 
 
@@ -32,11 +34,23 @@ namespace CSharp_Intermediate
         {
 
 
+            DbMigrator dbMigrator = new DbMigrator(new Logger());
+
+            var logger = new Logger();
+
+            var installer = new Installer(logger);
+
+            dbMigrator.Migrate();
+            installer.Install();
+
+
+
+            /* INHERITANCE //
             var text = new Text();
             text.Width = 100;
             text.Copy();
             Console.WriteLine(text.Width);
-
+            */
 
             /*
             var cookie = new HttpCookie();
