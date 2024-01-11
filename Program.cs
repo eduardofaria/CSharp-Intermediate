@@ -1,11 +1,10 @@
 ﻿
 
 namespace CSharp_Intermediate
+
 {
-    partial class Program
+    class Program
     {
-
-
 
 
 
@@ -33,11 +32,18 @@ namespace CSharp_Intermediate
         {
 
 
+            var text = new Text();
+            text.Width = 100;
+            text.Copy();
+            Console.WriteLine(text.Width);
+
+
+            /*
             var cookie = new HttpCookie();
             cookie["name"] = "Edu";
 
             Console.WriteLine(cookie["name"]);
-
+            */
 
 
 
