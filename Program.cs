@@ -4,8 +4,21 @@ using System.Globalization;
 using CSharp_Intermediate;
 
 namespace CSharp_Intermediate
+{
+
+
+
+    public class GoldCustomer : Customer_2
     {
-        class Program
+        public void OfferVoucher()
+        {
+            
+        }
+    }
+
+
+
+    class Program
         {
 
 
@@ -34,6 +47,19 @@ namespace CSharp_Intermediate
         {
 
 
+            var customer_2 = new Customer_2();
+
+
+            /* // public int CalculateRating() //
+            customer_2.CalculateRating();
+            var rating = customer_2.CalculateRating();
+            */
+
+
+
+
+            /* // COMPOSITION
+
             DbMigrator dbMigrator = new DbMigrator(new Logger());
 
             var logger = new Logger();
@@ -42,7 +68,7 @@ namespace CSharp_Intermediate
 
             dbMigrator.Migrate();
             installer.Install();
-
+            */
 
 
             /* INHERITANCE //
