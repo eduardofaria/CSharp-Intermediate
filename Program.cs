@@ -12,14 +12,14 @@ namespace CSharp_Intermediate
     {
         public void OfferVoucher()
         {
-            
+
         }
     }
 
 
 
     class Program
-        {
+    {
 
 
 
@@ -124,7 +124,7 @@ namespace CSharp_Intermediate
             Console.WriteLine(calculator.Add(1, 2));
             Console.WriteLine(calculator.Add(1, 2, 3));
             Console.WriteLine(calculator.Add(1, 2, 3, 4));
-            Console.WriteLine(calculator.Add(new int[] {1, 2, 3, 4, 5, 6}));
+            Console.WriteLine(calculator.Add(new int[] { 1, 2, 3, 4, 5, 6 }));
 
         }
 
@@ -133,7 +133,7 @@ namespace CSharp_Intermediate
             //var number = int.Parse("abc");
             int number;
             var result = int.TryParse("abc", out number);
-                if (result)
+            if (result)
             {
                 Console.WriteLine(number);
             }
