@@ -18,6 +18,13 @@ public class Retangle : Shape
     }
 }
 
+public class Triangle : Shape
+{
+    override public void Draw()
+    {
+        Console.WriteLine("Draw a triangle");
+    }
+}
 
 public class Shape
 {
