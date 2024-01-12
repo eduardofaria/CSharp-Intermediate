@@ -1,6 +1,21 @@
 namespace polymorphism;
 
-public class Circle : Shape
+
+
+public abstract class Shape
+{
+    public int Wdth { get; set; }
+    public int Height { get; set; }
+    public Position? Position { get; set; }
+    public abstract void Draw();
+    //public virtual void Draw(){}
+
+
+}
+
+
+
+public sealed class Circle : Shape
 {
     override public void Draw()
     {
@@ -24,17 +39,5 @@ public class Triangle : Shape
     {
         Console.WriteLine("Draw a triangle");
     }
-}
-
-public class Shape
-{
-    public int Wdth { get; set; }
-    public int Height { get; set; }
-    public Position? Position { get; set; }
-    public virtual void Draw()
-    {
-
-    }
-
 }
 
